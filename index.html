@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tailwind Color Converter - Convert Hex, RGB and Tailwind Colors
+    </title>
+    <meta
+      name="description"
+      content="Easily convert between Hex, RGB, and Tailwind CSS colors with our powerful converter tool. Discover the closest Tailwind color shades and their hex or RGB equivalents."
+    />
+    <meta
+      name="keywords"
+      content="Tailwind Color Converter, Hex to RGB, RGB to Hex, Tailwind CSS Colors, Tailwind Color Palette, Color Conversion Tool"
+    />
+    <meta name="author" content="Chieyine Nelson Nonso" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Open Graph Metadata -->
+    <meta
+      property="og:title"
+      content="Tailwind Color Converter - Convert Hex, RGB & Tailwind Colors"
+    />
+    <meta
+      property="og:description"
+      content="Easily convert between Hex, RGB, and Tailwind CSS colors with our powerful converter tool."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/preview.png"
+    />
+
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tailwind Color Converter - Convert Hex, RGB & Tailwind Colors"
+    />
+    <meta
+      name="twitter:description"
+      content="Easily convert between Hex, RGB, and Tailwind CSS colors with our powerful converter tool."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/images/preview.png"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Tailwind Color Converter",
+        "url": "https://yourwebsite.com",
+        "description": "Easily convert between Hex, RGB, and Tailwind CSS colors with our powerful converter tool.",
+        "author": {
+          "@type": "Person",
+          "name": "Chieyine Nelson Nonso"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>🌈 Tailwind Color Converter</h1>
+      <p>Convert between Hex, RGB, and Tailwind Colors seamlessly!</p>
+    </header>
+
+    <main>
+      <section class="conversion-tool">
+        <div class="card">
+          <label for="hexInput">Hex Code</label>
+          <input
+            type="text"
+            id="hexInput"
+            placeholder="#3b82f6"
+            aria-label="Enter Hex Code"
+          />
+          <div id="hexPreview" class="color-preview"></div>
+        </div>
+
+        <div class="card">
+          <label for="rgbInput">RGB Code</label>
+          <input
+            type="text"
+            id="rgbInput"
+            placeholder="rgb(59, 130, 246)"
+            aria-label="Enter RGB Code"
+          />
+          <div id="rgbPreview" class="color-preview"></div>
+        </div>
+
+        <div class="card">
+          <label for="tailwindInput">Tailwind Color</label>
+          <input
+            type="text"
+            id="tailwindInput"
+            placeholder="blue-500"
+            aria-label="Enter Tailwind Color"
+          />
+          <div id="tailwindPreview" class="color-preview"></div>
+        </div>
+      </section>
+
+      <section class="palette-section" aria-labelledby="paletteTitle">
+        <h2 id="paletteTitle">Tailwind Color Palette</h2>
+        <div id="paletteContainer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with ❤️ by Chieyine Nelson Nonso</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
